@@ -1,0 +1,26 @@
+buildscript {
+    repositories {
+        repositories {
+            mavenLocal()
+            maven {
+                name 'nexus'
+                url "${searchMavenRepo_url}/repo"
+                credentials {
+                    username = searchMavenRepo_user
+                    password = searchMavenRepo_password
+                }
+            }
+        }
+    }
+    dependencies {
+        classpath 'com.sky.search.gradle:release-gradle-plugin:+'
+    }
+}
+
+apply plugin: 'com.sky.search.release'
+
+group = 'org.arabidopsis'
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}

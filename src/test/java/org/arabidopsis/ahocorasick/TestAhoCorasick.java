@@ -1,12 +1,12 @@
 package org.arabidopsis.ahocorasick;
 
+import junit.framework.TestCase;
+
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Set;
-
-import junit.framework.TestCase;
 
 /**
  * Junit test cases for AhoCorasick.
